@@ -58,20 +58,3 @@ Feature: HomePage
       | Çözümler  | Güvenlik Kuvvetleri Araçları | Güvenlik Kuvvetleri Araçları | Güvenlik Kuvvetleri Araçları         |
       | Çözümler  | Yük ve Eşya Taşıyan Araçlar  | Yük ve Eşya Taşıyan Araçlar  | Yük ve Eşya Taşıyan Araçlar          |
       | Çözümler  | Belediye ve Halk Otobüsleri  | Belediye ve Halk Otobüsleri  | Belediye ve Halk Otobüsleri          |
-
-  @LoginForm
-  Scenario: Araç Bazlı Rapor Menüsü
-    When  user clicks the login button
-    And   user sends <username> and <password>
-      |username|demomovita|
-      |password|1192movita|
-    And   user clicks login form login button
-    And   verify with map
-    And   user click raporlar menu
-    And   user clicks the base tool report
-    And   user clicks the detailed filter
-    And  user sends detailed filter of sub menu
-      | tarih      | tarih_filter      |
-      | is baslama | is_baslama_filter |
-      | is bitis   | is_bitis_filter   |
-
